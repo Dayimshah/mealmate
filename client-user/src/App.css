@@ -1,7 +1,98 @@
-/* App.css placeholder to make build pass */
-
-body {
+* {
   margin: 0;
-  font-family: sans-serif;
-  background: #f8f8f8;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, .App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: linear-gradient(to bottom right, #ff6e40, #ff3d00);
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.3);
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #fff;
+  color: #ff3d00;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.section p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.section img {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0,0,0,0.3);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 420px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar nav a {
+    margin: 0.5rem;
+  }
 }
