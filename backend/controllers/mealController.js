@@ -1,11 +1,11 @@
-import Meal from '../models/Meal.js';
+// For demo: simple hardcoded meals
+const meals = [
+  { id: 1, title: 'Grilled Chicken', price: 10 },
+  { id: 2, title: 'Veggie Bowl', price: 8 }
+];
 
-export const getMeals = async (req, res) => {
-  const meals = await Meal.find();
+const getMeals = (req, res) => {
   res.json(meals);
 };
 
-export const createMeal = async (req, res) => {
-  const meal = await Meal.create(req.body);
-  res.json(meal);
-};
+module.exports = { getMeals };

@@ -1,11 +1,15 @@
-import Order from '../models/Order.js';
+// For demo: in-memory orders
+const orders = [];
 
-export const createOrder = async (req, res) => {
-  const order = await Order.create(req.body);
-  res.json(order);
-};
-
-export const getUserOrders = async (req, res) => {
-  const orders = await Order.find({ userId: req.params.userId });
+const getOrders = (req, res) => {
   res.json(orders);
 };
+
+const placeOrder = (req, res) => {
+  const { userId, mealId, quantity } = req.body;
+  const order = { id: Date.now().toString(), userId, mealId, quantity };
+  orders.push(order);
+  res.status(201).json({ message: 'Order placed', order });
+};
+
+module.exports = { getOrders, placeOrder };
