@@ -22,9 +22,9 @@ const AdminDashboard = () => {
           </p>
         </section>
         <section className="admin-images">
-          <img src="https://source.unsplash.com/400x250/?food" alt="Food 1" />
-          <img src="https://source.unsplash.com/400x250/?meal" alt="Food 2" />
-          <img src="https://source.unsplash.com/400x250/?restaurant" alt="Food 3" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg" />
+          <img src="https://cdn.britannica.com/36/123536-050-95CB0C6E/Variety-fruits-vegetables.jpg" alt="Food 2" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGzp_ixhkXkTK_ArET679NI-5pv4YgYoG_Q&s" alt="Food 3" />
         </section>
       </main>
     </div>
