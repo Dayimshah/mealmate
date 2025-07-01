@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import Orders from './pages/Orders';
 import MealsAdmin from './pages/MealsAdmin';
-import './App.css';
+
 
 function App() {
   return (
