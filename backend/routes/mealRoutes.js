@@ -1,9 +1,7 @@
-import express from 'express';
-import { getMeals, createMeal } from '../controllers/mealController.js';
-
+const express = require('express');
 const router = express.Router();
+const { getMeals } = require('../controllers/mealController');
 
 router.get('/', getMeals);
-router.post('/', createMeal);
 
-export default router;
+module.exports = router;
