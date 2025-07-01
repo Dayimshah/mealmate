@@ -1,0 +1,84 @@
+.admin-dashboard {
+  min-height: 100vh;
+  background: url('https://source.unsplash.com/1600x900/?restaurant,kitchen') no-repeat center center/cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-nav {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.admin-title {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.admin-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-links a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.admin-links a:hover {
+  text-decoration: underline;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.admin-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.admin-intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.admin-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.admin-images img {
+  border-radius: 8px;
+  width: 300px;
+  height: auto;
+}
+
+@media (max-width: 420px) {
+  .admin-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .admin-images img {
+    width: 90%;
+  }
+}
