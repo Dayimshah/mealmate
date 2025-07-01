@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <nav className="flex flex-wrap justify-between items-center px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-green-500 to-green-700 text-white shadow-md">
-      <Link to="/" className="font-bold text-lg sm:text-xl">MealMate</Link>
-      <div className="flex flex-wrap gap-2 sm:space-x-4">
-        <Link to="/meals" className="hover:underline">Meals</Link>
-        <Link to="/mealplan" className="hover:underline">Meal Plan</Link>
-        <Link to="/order" className="hover:underline">Order</Link>
-        <Link to="/login" className="hover:underline">Login</Link>
+    <nav className="w-full flex justify-between items-center px-8 py-4 shadow bg-white/30 backdrop-blur-md dark:bg-gray-800/30">
+      <Link to="/" className="font-bold text-2xl text-gray-900 dark:text-gray-100">
+        MealMate
+      </Link>
+      <div className="flex space-x-6 text-gray-800 dark:text-gray-200 text-lg">
+        <Link to="/meals" className="hover:text-green-600 transition">Meals</Link>
+        <Link to="/mealplan" className="hover:text-green-600 transition">Meal Plan</Link>
+        <Link to="/order" className="hover:text-green-600 transition">Order</Link>
+        <Link to="/login" className="hover:text-green-600 transition">Login</Link>
       </div>
     </nav>
   );
